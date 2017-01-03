@@ -16,4 +16,4 @@ npm install
 npm run server // if fail, npm install -g nodemon babel-cli
 ```
 
-Access http://localhost:8000
+Access @ http://localhost:8000
