@@ -1,0 +1,10 @@
+<div id="history">
+  <span class={{if historyLength "hide"}}>No history</span>
+  {{#each model as |history|}}
+    <p>
+      {{#each history.input as |ele|}}
+        <span>{{ele}}</span>
+      {{/each}}
+    = {{history.output}}</p>
+  {{/each}}
+</div>

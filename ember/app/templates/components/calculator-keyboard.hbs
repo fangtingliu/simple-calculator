@@ -1,0 +1,44 @@
+<!-- Screen -->
+<div class="top">
+  <div class="screen">{{screens}}</div>
+</div>
+
+<!-- Keyboard -->
+<div class="keys">
+  <div class="row">
+    <div class="key" onclick={{action "operatorInput" "^"}}>X<sup>y</sup></div>
+    <div class="key" onclick={{action "operatorInput" "("}}>(</div>
+    <div class="key" onclick={{action "operatorInput" ")"}}>)</div>
+    <div class="key" onclick={{action "clearInput"}}>AC</div>
+    <div class="key"onclick={{action "deleteInput"}}>C</div>
+  </div>
+  <div class="row">
+    <div class="key" onclick={{action "operatorInput" "√"}}>√</div>
+    <div class="key number" onclick={{action "numInput" 7}}>7</div>
+    <div class="key number" onclick={{action "numInput" 8}}>8</div>
+    <div class="key number" onclick={{action "numInput" 9}}>9</div>
+    <div class="key" onclick={{action "operatorInput" "/"}}>/</div>
+  </div>
+  <div class="row">
+    <div class="key" onclick={{action "funInput"}}>ᵔᴥᵔ</div>
+    <div class="key number" onclick={{action "numInput" 4}}>4</div>
+    <div class="key number" onclick={{action "numInput" 5}}>5</div>
+    <div class="key number"  onclick={{action "numInput" 6}}>6</div>
+    <div class="key" onclick={{action "operatorInput" "*"}}>*</div>
+  </div>
+  <div class="row">
+    <div class="key" onclick={{action "funInput"}}>ʘ‿ʘ</div>
+    <div class="key number" onclick={{action "numInput" 1}}>1</div>
+    <div class="key number" onclick={{action "numInput" 2}}>2</div>
+    <div class="key number"  onclick={{action "numInput" 3}}>3</div>
+    <div class="key" onclick={{action "operatorInput" "-"}}>-</div>
+  </div>
+  <div class="row">
+    <div class="key" onclick={{action "angryInput"}}>ಠ╭╮ಠ</div>
+    <div class="key number"  onclick={{action "numInput" 0}}>0</div>
+    <div class="key" onclick={{action "numInput" "."}}>.</div>
+    <div class="key equel" onclick={{action "submitInput"}}>=</div>
+    <div class="key" onclick={{action "operatorInput" "+"}}>+</div>
+  </div>
+</div>
+{{yield}}
